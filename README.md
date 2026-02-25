@@ -1,5 +1,7 @@
 # Generative Prompts Plugin
 
+![Generative Prompts UI](screenshots/plugin_ui.png)
+
 An IntelliJ Platform plugin for Android Studio that provides a convenient way to access and use pre-defined prompts for Android development, especially for Jetpack Compose and Material 3 design patterns.
 
 ## Features
