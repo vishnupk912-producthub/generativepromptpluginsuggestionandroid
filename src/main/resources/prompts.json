@@ -1,0 +1,494 @@
+{
+  "prompts": [
+    {
+      "intent": "room_entity_setup",
+      "prompt": "Define Room database entities for a Jetpack Compose app with proper primary keys, relationships, and indexes.",
+      "category": "Database",
+      "description": "Create Room entities with relationships and indexes",
+      "tags": ["room", "database", "entities", "compose"]
+    },
+    {
+      "intent": "room_dao_creation",
+      "prompt": "Implement DAO interfaces in Room with insert, update, delete, and query methods, using suspend functions for coroutines.",
+      "category": "Database",
+      "description": "Create DAO interfaces with coroutine support",
+      "tags": ["dao", "room", "database", "compose"]
+    },
+    {
+      "intent": "room_database_migration",
+      "prompt": "Handle Room database version migrations safely. Implement migration strategies for adding new columns and tables without losing existing data.",
+      "category": "Database",
+      "description": "Implement safe Room database migrations",
+      "tags": ["migration", "room", "database", "compose"]
+    },
+    {
+      "intent": "repository_layer_setup",
+      "prompt": "Create a Repository layer that abstracts Room database operations and provides clean APIs to ViewModels in a Jetpack Compose app.",
+      "category": "Database",
+      "description": "Implement Repository pattern for Room database",
+      "tags": ["repository", "room", "database", "compose"]
+    },
+    {
+      "intent": "room_with_flow",
+      "prompt": "Expose Room database queries as Flow streams and collect them in a Jetpack Compose UI to automatically update the UI on data changes.",
+      "category": "Database",
+      "description": "Use Flow with Room to update Compose UI reactively",
+      "tags": ["flow", "room", "database", "compose"]
+    },
+    {
+      "intent": "offline_caching_strategy",
+      "prompt": "Implement offline caching using Room database. Save API responses locally and display cached data when the network is unavailable.",
+      "category": "Database",
+      "description": "Provide offline caching for API data using Room",
+      "tags": ["offline", "cache", "room", "compose"]
+    },
+    {
+      "intent": "room_relations",
+      "prompt": "Set up one-to-many and many-to-many relationships in Room entities and display the related data in a Jetpack Compose UI.",
+      "category": "Database",
+      "description": "Manage Room entity relationships and show in UI",
+      "tags": ["relations", "room", "database", "compose"]
+    },
+    {
+      "intent": "room_with_coroutines",
+      "prompt": "Perform Room database operations in background threads using Kotlin coroutines, ensuring UI responsiveness in Jetpack Compose screens.",
+      "category": "Database",
+      "description": "Use coroutines with Room for asynchronous operations",
+      "tags": ["coroutines", "room", "database", "compose"]
+    },
+    {
+      "intent": "complex_queries_room",
+      "prompt": "Implement complex SQL queries in Room DAOs, including joins, aggregation, and filtering, and display results in Jetpack Compose UI.",
+      "category": "Database",
+      "description": "Use complex Room queries with joins and filters",
+      "tags": ["queries", "room", "database", "compose"]
+    },
+    {
+      "intent": "data_seeding_room",
+      "prompt": "Prepopulate Room database with initial data on first launch, using Room's callback methods or a prepackaged database.",
+      "category": "Database",
+      "description": "Seed Room database with initial data on app start",
+      "tags": ["seed", "room", "database", "compose"]
+    },
+    {
+      "intent": "ui_component_card",
+      "prompt": "Design a Card component in Jetpack Compose using Material3 with title, subtitle, image, and action buttons. Ensure responsive layout and accessibility.",
+      "category": "UI Design",
+      "description": "Create Material3 Card component with image and actions",
+      "tags": ["compose", "ui", "card", "material3"]
+    },
+    {
+      "intent": "bottom_navigation_setup",
+      "prompt": "Implement BottomNavigation with 3 tabs in Jetpack Compose. Ensure proper navigation using Navigation Compose and state restoration when switching tabs.",
+      "category": "Navigation",
+      "description": "Set up BottomNavigation with Navigation Compose",
+      "tags": ["compose", "navigation", "bottomnavigation", "state"]
+    },
+    {
+      "intent": "viewmodel_state_management",
+      "prompt": "Manage state in a Jetpack Compose screen using ViewModel and StateFlow. Include loading, success, and error states, and show UI updates accordingly.",
+      "category": "State Management",
+      "description": "Use ViewModel and StateFlow for screen state",
+      "tags": ["viewmodel", "stateflow", "compose", "state"]
+    },
+    {
+      "intent": "dark_light_theme",
+      "prompt": "Implement dynamic Dark and Light theme support in Jetpack Compose with Material3. Include custom color schemes and typography for both modes.",
+      "category": "Theming",
+      "description": "Add dynamic dark/light theme support with Material3",
+      "tags": ["theme", "darkmode", "material3", "compose"]
+    },
+    {
+      "intent": "lazycolumn_list",
+      "prompt": "Create a LazyColumn in Jetpack Compose to display a list of items with proper item keys, padding, and swipe-to-refresh. Include loading and empty states.",
+      "category": "Lists",
+      "description": "Build a performant LazyColumn list with refresh",
+      "tags": ["lazycolumn", "list", "compose", "performance"]
+    },
+    {
+      "intent": "login_form_validation",
+      "prompt": "Implement a login form in Jetpack Compose with email and password fields, real-time validation, error messages, and submit button handling.",
+      "category": "Forms",
+      "description": "Create login form with validation and error handling",
+      "tags": ["form", "validation", "login", "compose"]
+    },
+    {
+      "intent": "animated_visibility_example",
+      "prompt": "Add AnimatedVisibility to show/hide a composable with smooth transitions based on a state variable in Jetpack Compose.",
+      "category": "Animations",
+      "description": "Use AnimatedVisibility for composable transitions",
+      "tags": ["animation", "compose", "transitions"]
+    },
+    {
+      "intent": "viewmodel_unit_test",
+      "prompt": "Write unit tests for a ViewModel in a Jetpack Compose app using JUnit5 and Mockito. Test LiveData/StateFlow emissions and business logic.",
+      "category": "Testing",
+      "description": "Unit test ViewModel logic with JUnit5 and Mockito",
+      "tags": ["unit-test", "viewmodel", "compose", "mocking"]
+    },
+    {
+      "intent": "compose_ui_test",
+      "prompt": "Write UI tests for a Jetpack Compose screen using ComposeTestRule. Verify button clicks, text inputs, and navigation events.",
+      "category": "Testing",
+      "description": "UI test Compose screen interactions and navigation",
+      "tags": ["ui-test", "compose", "navigation", "input"]
+    },
+    {
+      "intent": "repository_unit_test",
+      "prompt": "Write unit tests for a Repository class that accesses Room database and remote APIs. Use coroutines and mock responses.",
+      "category": "Testing",
+      "description": "Test Repository logic with Room and API mocks",
+      "tags": ["unit-test", "repository", "room", "mocking"]
+    },
+    {
+      "intent": "mock_api_responses",
+      "prompt": "Mock API responses for unit and integration tests in a Jetpack Compose app using MockWebServer and Retrofit.",
+      "category": "Testing",
+      "description": "Simulate API responses for testing",
+      "tags": ["mock", "api", "compose", "testing"]
+    },
+    {
+      "intent": "form_validation_test",
+      "prompt": "Write unit tests for form validation logic in Jetpack Compose. Ensure proper error handling and state updates on invalid inputs.",
+      "category": "Testing",
+      "description": "Test Compose form validation logic",
+      "tags": ["unit-test", "form", "validation", "compose"]
+    },
+    {
+      "intent": "navigation_test",
+      "prompt": "Test navigation between multiple Compose screens using ComposeTestRule. Verify arguments passing, deep linking, and back stack behavior.",
+      "category": "Testing",
+      "description": "Test navigation and back stack in Compose screens",
+      "tags": ["navigation", "ui-test", "compose", "testing"]
+    },
+    {
+      "intent": "paging3_integration_test",
+      "prompt": "Write integration tests for Jetpack Compose screens using Paging3. Verify data loading, refresh, and error states.",
+      "category": "Testing",
+      "description": "Test Paging3 integration in Compose UI",
+      "tags": ["integration-test", "paging3", "compose", "testing"]
+    },
+    {
+      "intent": "hilt_di_test",
+      "prompt": "Write unit tests for Hilt-injected ViewModels and Repositories. Use TestModules to provide mock dependencies.",
+      "category": "Testing",
+      "description": "Test Hilt DI setup with mock dependencies",
+      "tags": ["hilt", "unit-test", "viewmodel", "mocking"]
+    },
+    {
+      "intent": "room_dao_test",
+      "prompt": "Write unit tests for Room DAOs in a Jetpack Compose app. Test insert, query, update, and delete operations using in-memory database.",
+      "category": "Testing",
+      "description": "Test Room DAO operations with in-memory DB",
+      "tags": ["unit-test", "room", "dao", "compose"]
+    },
+    {
+      "intent": "snapshot_testing",
+      "prompt": "Write snapshot tests for Jetpack Compose Composables to verify visual correctness. Include multiple device configurations and themes.",
+      "category": "Testing",
+      "description": "Perform snapshot testing for Compose UI",
+      "tags": ["snapshot-test", "compose", "ui", "visual"]
+    },
+    {
+      "intent": "retrofit_api_call",
+      "prompt": "Implement a REST API call using Retrofit and Kotlin Coroutines in Jetpack Compose. Show loading, success, and error states in the UI.",
+      "category": "API Integration",
+      "description": "Fetch data with Retrofit and show UI states",
+      "tags": ["api", "retrofit", "compose", "coroutines"]
+    },
+    {
+      "intent": "room_database_setup",
+      "prompt": "Set up a Room database in Jetpack Compose app with Entity, DAO, and Repository. Include data insertion, querying, and migration strategies.",
+      "category": "Database",
+      "description": "Implement Room database with DAO and Repository",
+      "tags": ["room", "database", "compose", "repository"]
+    },
+    {
+      "intent": "runtime_permission_handling",
+      "prompt": "Handle runtime permissions (camera, location) in Jetpack Compose with proper rationale dialogs and state management.",
+      "category": "Permissions",
+      "description": "Request and manage runtime permissions",
+      "tags": ["permissions", "compose", "runtime", "camera"]
+    },
+    {
+      "intent": "coil_image_loading",
+      "prompt": "Load images in Jetpack Compose using Coil with placeholders, caching, and error handling. Apply transformations like circle crop or blur.",
+      "category": "Media",
+      "description": "Load images efficiently using Coil",
+      "tags": ["coil", "image", "compose", "loading"]
+    },
+    {
+      "intent": "compose_ui_testing",
+      "prompt": "Write unit and UI tests for a Jetpack Compose screen using ComposeTestRule. Include checking button clicks, text input, and navigation events.",
+      "category": "Testing",
+      "description": "Add unit and UI tests for Compose screen",
+      "tags": ["testing", "compose", "unittest", "ui"]
+    },
+    {
+      "intent": "accessibility_semantics",
+      "prompt": "Add accessibility support in Jetpack Compose using semantics, contentDescription, and TalkBack testing.",
+      "category": "Accessibility",
+      "description": "Ensure composables are accessible with TalkBack",
+      "tags": ["accessibility", "compose", "semantics", "talkback"]
+    },
+    {
+      "intent": "compose_performance_optimization",
+      "prompt": "Optimize recompositions in Jetpack Compose using remember, derivedStateOf, and keys in LazyColumn to reduce unnecessary re-renders.",
+      "category": "Performance",
+      "description": "Improve Compose performance and reduce recomposition",
+      "tags": ["performance", "compose", "optimization", "lazycolumn"]
+    },
+    {
+      "intent": "hilt_di_setup",
+      "prompt": "Set up Hilt dependency injection in a Jetpack Compose app. Inject ViewModels and Repositories with proper scoping and module definitions.",
+      "category": "Architecture",
+      "description": "Implement Hilt DI with ViewModel injection",
+      "tags": ["hilt", "di", "compose", "viewmodel"]
+    },
+    {
+      "intent": "ui_component_design",
+      "prompt": "Design a Jetpack Compose UI component for the given feature, following Material 3 guidelines. Include proper theming, accessibility, and responsive design considerations. Use Material 3 components like Card, Button, TextField, and ensure proper color schemes, typography, and spacing.",
+      "category": "UI Design",
+      "description": "Create Material 3 compliant UI components with accessibility",
+      "tags": ["compose", "material3", "ui", "accessibility"]
+    },
+    {
+      "intent": "navigation_setup",
+      "prompt": "Set up navigation in a Jetpack Compose app using Navigation Compose. Include proper type safety, deep linking, and back stack management. Use sealed classes for route definitions and implement proper navigation patterns with arguments passing.",
+      "category": "Navigation",
+      "description": "Implement navigation with Navigation Compose and type safety",
+      "tags": ["navigation", "compose", "routing", "deep-linking"]
+    },
+    {
+      "intent": "state_management",
+      "prompt": "Implement state management for a Jetpack Compose screen using ViewModel, StateFlow, and proper state hoisting patterns. Include loading states, error handling, and data persistence. Use remember and mutableStateOf for local state management.",
+      "category": "State Management",
+      "description": "Manage state with ViewModel, StateFlow, and proper patterns",
+      "tags": ["state", "viewmodel", "stateflow", "compose"]
+    },
+    {
+      "intent": "theme_customization",
+      "prompt": "Create a custom Material 3 theme for a Jetpack Compose app with light and dark mode support. Include custom color schemes, typography, and component styling. Implement dynamic theming and user preference handling.",
+      "category": "Theming",
+      "description": "Build custom Material 3 themes with light/dark mode",
+      "tags": ["theme", "material3", "dark-mode", "customization"]
+    },
+    {
+      "intent": "list_implementation",
+      "prompt": "Implement a performant list in Jetpack Compose using LazyColumn with proper item keys, content padding, and pull-to-refresh functionality. Include item animations, loading states, and empty state handling.",
+      "category": "Lists",
+      "description": "Create performant lists with LazyColumn and animations",
+      "tags": ["lazycolumn", "list", "performance", "animations"]
+    },
+    {
+      "intent": "form_validation",
+      "prompt": "Create a form in Jetpack Compose with proper validation, error handling, and user feedback. Include input validation, error messages, and form submission handling with proper state management.",
+      "category": "Forms",
+      "description": "Build forms with validation and error handling",
+      "tags": ["form", "validation", "input", "error-handling"]
+    },
+    {
+      "intent": "animation_implementation",
+      "prompt": "Implement smooth animations in Jetpack Compose using animate*AsState, AnimatedVisibility, and custom animations. Include enter/exit animations, state transitions, and gesture-based animations.",
+      "category": "Animations",
+      "description": "Create smooth animations and transitions",
+      "tags": ["animation", "transitions", "gestures", "smooth"]
+    },
+    {
+      "intent": "api_integration",
+      "prompt": "Integrate REST API calls in a Jetpack Compose app using Retrofit, OkHttp, and proper error handling. Include loading states, network error handling, and data caching with Room database.",
+      "category": "API Integration",
+      "description": "Connect to REST APIs with proper error handling",
+      "tags": ["api", "retrofit", "network", "error-handling"]
+    },
+    {
+      "intent": "database_setup",
+      "prompt": "Set up Room database in a Jetpack Compose app with proper entity definitions, DAOs, and database migrations. Include data access patterns, caching strategies, and offline support.",
+      "category": "Database",
+      "description": "Implement Room database with proper patterns",
+      "tags": ["room", "database", "offline", "caching"]
+    },
+    {
+      "intent": "permission_handling",
+      "prompt": "Implement runtime permissions in a Jetpack Compose app with proper permission requests, user explanations, and fallback handling. Include permission state management and user-friendly messaging.",
+      "category": "Permissions",
+      "description": "Handle runtime permissions with user-friendly UX",
+      "tags": ["permissions", "runtime", "ux", "fallback"]
+    },
+    {
+      "intent": "image_loading",
+      "prompt": "Implement image loading in Jetpack Compose using Coil with proper caching, placeholder images, and error handling. Include image transformations, memory management, and loading states.",
+      "category": "Media",
+      "description": "Load and display images with Coil and caching",
+      "tags": ["image", "coil", "caching", "placeholder"]
+    },
+    {
+      "intent": "testing_setup",
+      "prompt": "Set up testing for Jetpack Compose screens including unit tests, UI tests with ComposeTestRule, and integration tests. Include test data builders, mocking strategies, and test coverage.",
+      "category": "Testing",
+      "description": "Implement comprehensive testing for Compose screens",
+      "tags": ["testing", "unit-tests", "ui-tests", "coverage"]
+    },
+    {
+      "intent": "accessibility_implementation",
+      "prompt": "Implement accessibility features in Jetpack Compose including semantic properties, content descriptions, and screen reader support. Include focus management, keyboard navigation, and accessibility testing.",
+      "category": "Accessibility",
+      "description": "Add comprehensive accessibility support",
+      "tags": ["accessibility", "semantics", "screen-reader", "navigation"]
+    },
+    {
+      "intent": "performance_optimization",
+      "prompt": "Optimize Jetpack Compose performance by implementing proper recomposition strategies, using remember and derivedStateOf, and avoiding unnecessary recompositions. Include performance monitoring and profiling.",
+      "category": "Performance",
+      "description": "Optimize Compose performance and reduce recompositions",
+      "tags": ["performance", "recomposition", "optimization", "profiling"]
+    },
+    {
+      "intent": "dependency_injection",
+      "prompt": "Set up dependency injection in a Jetpack Compose app using Hilt with proper scoping, ViewModel injection, and repository patterns. Include module definitions and testing with test modules.",
+      "category": "Architecture",
+      "description": "Implement dependency injection with Hilt",
+      "tags": ["hilt", "di", "architecture", "scoping"]
+    },
+    {
+      "intent": "button_custom_size",
+      "prompt": "Design a Jetpack Compose Button with a customizable width `{width}` and height `{height}`. The button should have a text label `{text}` and apply Material3 styling.",
+      "category": "UI Design",
+      "description": "Create a Button with developer-specified width, height, and text",
+      "tags": ["button", "compose", "ui", "material3"]
+    },
+    {
+      "intent": "card_custom_size",
+      "prompt": "Create a Card in Jetpack Compose with width `{width}` and height `{height}`. Include an image, title `{title}`, subtitle `{subtitle}`, and action buttons. Apply Material3 theming.",
+      "category": "UI Design",
+      "description": "Build a Card with developer-defined size and content",
+      "tags": ["card", "compose", "ui", "material3"]
+    },
+    {
+      "intent": "textfield_custom_size",
+      "prompt": "Build a TextField in Jetpack Compose with width `{width}` and height `{height}`. Include placeholder text `{placeholder}` and proper validation handling.",
+      "category": "UI Design",
+      "description": "Create a TextField with custom size and placeholder",
+      "tags": ["textfield", "compose", "ui", "form"]
+    },
+    {
+      "intent": "image_custom_size",
+      "prompt": "Display an Image in Jetpack Compose with width `{width}` and height `{height}`. The image source should be `{imageUrl}` and content scale `{contentScale}`.",
+      "category": "UI Design",
+      "description": "Show an Image with specified dimensions and scaling",
+      "tags": ["image", "compose", "ui", "media"]
+    },
+    {
+      "intent": "box_custom_size",
+      "prompt": "Create a Box in Jetpack Compose with width `{width}` and height `{height}`. Inside the Box, place a composable of your choice `{childComposable}`.",
+      "category": "UI Design",
+      "description": "Create a Box container with custom size and child composable",
+      "tags": ["box", "compose", "ui", "layout"]
+    },
+    {
+      "intent": "row_custom_height",
+      "prompt": "Build a Row in Jetpack Compose with height `{height}` and spacing `{spacing}` between items. Include composables `{item1}`, `{item2}`, and `{item3}` inside.",
+      "category": "UI Design",
+      "description": "Create a horizontal Row with specified height and spacing",
+      "tags": ["row", "compose", "layout", "ui"]
+    },
+    {
+      "intent": "column_custom_width",
+      "prompt": "Create a Column in Jetpack Compose with width `{width}`. Include vertical arrangement `{verticalArrangement}` and padding `{padding}`. Add composables `{item1}`, `{item2}`, `{item3}`.",
+      "category": "UI Design",
+      "description": "Build a vertical Column with custom width and arrangement",
+      "tags": ["column", "compose", "layout", "ui"]
+    },
+    {
+      "intent": "surface_custom_size",
+      "prompt": "Design a Surface in Jetpack Compose with width `{width}` and height `{height}`. Apply elevation `{elevation}`, background color `{color}`, and rounded corners `{cornerRadius}`.",
+      "category": "UI Design",
+      "description": "Create a Surface with custom size, elevation, color, and corners",
+      "tags": ["surface", "compose", "ui", "material3"]
+    },
+    {
+      "intent": "lazycolumn_item_custom_size",
+      "prompt": "Create a LazyColumn in Jetpack Compose where each item has width `{itemWidth}` and height `{itemHeight}`. Include a composable `{itemContent}` inside each item.",
+      "category": "UI Design",
+      "description": "Build a LazyColumn with items of developer-defined size",
+      "tags": ["lazycolumn", "compose", "list", "ui"]
+    },
+    {
+      "intent": "floatingactionbutton_custom_size",
+      "prompt": "Create a FloatingActionButton in Jetpack Compose with width `{width}` and height `{height}`. The button icon should be `{icon}` and color `{color}`.",
+      "category": "UI Design",
+      "description": "Build a FAB with custom size, icon, and color",
+      "tags": ["fab", "compose", "ui", "material3"]
+    },
+    {
+      "intent": "fade_in_animation",
+      "prompt": "Implement a fade-in animation in Jetpack Compose for composable `{composable}` over `{duration}` milliseconds using AnimatedVisibility or animateFloatAsState.",
+      "category": "Animations",
+      "description": "Fade in a composable with developer-specified duration",
+      "tags": ["animation", "fade", "compose", "visibility"]
+    },
+    {
+      "intent": "fade_out_animation",
+      "prompt": "Implement a fade-out animation in Jetpack Compose for composable `{composable}` over `{duration}` milliseconds using AnimatedVisibility or animateFloatAsState.",
+      "category": "Animations",
+      "description": "Fade out a composable with custom duration",
+      "tags": ["animation", "fade", "compose", "visibility"]
+    },
+    {
+      "intent": "scale_animation",
+      "prompt": "Create a scale animation in Jetpack Compose for composable `{composable}` scaling from `{startScale}` to `{endScale}` over `{duration}` milliseconds.",
+      "category": "Animations",
+      "description": "Animate scaling of a composable",
+      "tags": ["animation", "scale", "compose", "transform"]
+    },
+    {
+      "intent": "slide_in_animation",
+      "prompt": "Implement a slide-in animation for composable `{composable}` from `{direction}` over `{duration}` milliseconds using AnimatedVisibility or animate*AsState.",
+      "category": "Animations",
+      "description": "Slide in a composable from specified direction",
+      "tags": ["animation", "slide", "compose", "visibility"]
+    },
+    {
+      "intent": "slide_out_animation",
+      "prompt": "Implement a slide-out animation for composable `{composable}` to `{direction}` over `{duration}` milliseconds using AnimatedVisibility or animate*AsState.",
+      "category": "Animations",
+      "description": "Slide out a composable to specified direction",
+      "tags": ["animation", "slide", "compose", "visibility"]
+    },
+    {
+      "intent": "color_transition_animation",
+      "prompt": "Animate the background color of composable `{composable}` from `{startColor}` to `{endColor}` over `{duration}` milliseconds using animateColorAsState in Jetpack Compose.",
+      "category": "Animations",
+      "description": "Animate background color transition",
+      "tags": ["animation", "color", "compose", "transition"]
+    },
+    {
+      "intent": "rotation_animation",
+      "prompt": "Rotate composable `{composable}` from `{startAngle}` degrees to `{endAngle}` degrees over `{duration}` milliseconds using animateFloatAsState in Jetpack Compose.",
+      "category": "Animations",
+      "description": "Animate rotation of a composable",
+      "tags": ["animation", "rotation", "compose", "transform"]
+    },
+    {
+      "intent": "infinite_pulse_animation",
+      "prompt": "Create an infinite pulse animation for composable `{composable}` scaling between `{minScale}` and `{maxScale}` over `{duration}` milliseconds using infiniteTransition in Jetpack Compose.",
+      "category": "Animations",
+      "description": "Infinite pulse animation for a composable",
+      "tags": ["animation", "pulse", "infinite", "compose"]
+    },
+    {
+      "intent": "crossfade_animation",
+      "prompt": "Implement a crossfade between composables `{composable1}` and `{composable2}` over `{duration}` milliseconds using Crossfade in Jetpack Compose.",
+      "category": "Animations",
+      "description": "Crossfade between two composables",
+      "tags": ["animation", "crossfade", "compose", "transition"]
+    },
+    {
+      "intent": "gesture_based_animation",
+      "prompt": "Animate composable `{composable}` based on swipe or drag gesture using `Modifier.pointerInput` and `Animatable` in Jetpack Compose.",
+      "category": "Animations",
+      "description": "Animate composable based on user gestures",
+      "tags": ["animation", "gesture", "compose", "interaction"]
+    }
+  ]
+}

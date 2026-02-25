@@ -1,0 +1,17 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="8" cy="8" r="7" fill="white" stroke="black" stroke-width="1"/>
+  
+  <!-- Prompt/Text icon - Document with lines -->
+  <rect x="4" y="3" width="8" height="10" fill="white" stroke="black" stroke-width="0.5" rx="1"/>
+  
+  <!-- Text lines representing prompt content -->
+  <line x1="5.5" y1="5.5" x2="10.5" y2="5.5" stroke="black" stroke-width="0.8"/>
+  <line x1="5.5" y1="6.5" x2="9.5" y2="6.5" stroke="black" stroke-width="0.8"/>
+  <line x1="5.5" y1="7.5" x2="10.5" y2="7.5" stroke="black" stroke-width="0.8"/>
+  <line x1="5.5" y1="8.5" x2="8.5" y2="8.5" stroke="black" stroke-width="0.8"/>
+  <line x1="5.5" y1="9.5" x2="9.5" y2="9.5" stroke="black" stroke-width="0.8"/>
+  
+  <!-- Small sparkle/idea indicator -->
+  <path d="M11 2L11.5 3L12.5 3L11.5 4L11 5L10.5 4L9.5 3L10.5 3Z" fill="black"/>
+</svg>
